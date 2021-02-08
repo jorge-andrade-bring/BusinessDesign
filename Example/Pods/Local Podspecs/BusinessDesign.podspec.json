@@ -12,11 +12,14 @@
     "Jorge Andrade": "jorge.andrade@bringglobal.com"
   },
   "source": {
-    "git": "https://github.com/Jorge Andrade/BusinessDesign.git",
-    "tag": "0.1.0"
+    "http": "file:///~/BusinessDesign"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "BusinessDesign/Classes/**/*"
+  "source_files": "BusinessDesign/**/**",
+  "resource_bundles": {
+    "BusinessDesign": "BusinessDesign/**/**"
+  },
+  "vendored_frameworks": "BusinessDesign.framework"
 }
