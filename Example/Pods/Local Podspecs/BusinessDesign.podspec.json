@@ -1,0 +1,22 @@
+{
+  "name": "BusinessDesign",
+  "version": "0.1.0",
+  "summary": "A short description of BusinessDesign.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Jorge Andrade/BusinessDesign",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jorge Andrade": "jorge.andrade@bringglobal.com"
+  },
+  "source": {
+    "git": "https://github.com/Jorge Andrade/BusinessDesign.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "BusinessDesign/Classes/**/*"
+}

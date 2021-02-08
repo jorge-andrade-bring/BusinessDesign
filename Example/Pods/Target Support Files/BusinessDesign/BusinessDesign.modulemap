@@ -1,0 +1,6 @@
+framework module BusinessDesign {
+  umbrella header "BusinessDesign-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="BBNoIconTableViewCell" customModule="BBDesignKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="crt-W5-xgG">
+                        <rect key="frame" x="24" y="16" width="280" height="77.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81U-aL-eGq" customClass="BBListItemTitleLabel" customModule="BBDesignKit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IBAN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILq-Uj-RT8" customClass="BBListItemSubtitleLabel" customModule="BBDesignKit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28.5" width="280" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXm-dY-gOZ" customClass="BBListItemAmountLabel" customModule="BBDesignKit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="57" width="280" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPN-zd-OtC" userLabel="Separator">
+                        <rect key="frame" x="16" y="109.5" width="304" height="0.5"/>
+                        <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="VQL-Q3-57u"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="crt-W5-xgG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="RnM-OJ-8zp"/>
+                    <constraint firstItem="wPN-zd-OtC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="W6M-Ny-qei"/>
+                    <constraint firstAttribute="trailing" secondItem="crt-W5-xgG" secondAttribute="trailing" constant="16" id="hHs-2q-XA7"/>
+                    <constraint firstAttribute="trailing" secondItem="wPN-zd-OtC" secondAttribute="trailing" id="nFG-uy-WEL"/>
+                    <constraint firstItem="crt-W5-xgG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="v4D-WY-rlJ"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wPN-zd-OtC" secondAttribute="bottom" id="wbL-In-68Y"/>
+                    <constraint firstItem="wPN-zd-OtC" firstAttribute="top" secondItem="crt-W5-xgG" secondAttribute="bottom" constant="16" id="zji-bE-TYd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="HXm-dY-gOZ" id="W8d-wU-Qbe"/>
+                <outlet property="subtitleLabel" destination="ILq-Uj-RT8" id="fQ3-Aj-GGZ"/>
+                <outlet property="titleLabel" destination="81U-aL-eGq" id="oQA-qn-921"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="163.05803571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
