@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'BusinessDesign/Classes/**/*'
   
   s.resource_bundles = {
-    'BusinessDesign' => ['BusinessDesign/Assets/*.xcassets']
+    'BusinessDesign' => 'BusinessDesign/Assets/*.xcassets'
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
