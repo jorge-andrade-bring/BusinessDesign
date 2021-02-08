@@ -25,16 +25,16 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jorge Andrade' => 'jorge.andrade@bringglobal.com' }
-  s.source           = { :git => 'https://github.com/Jorge Andrade/BusinessDesign.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jorge-andrade-bring/BusinessDesign.git'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'BusinessDesign/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'BusinessDesign' => ['BusinessDesign/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'BusinessDesign' => ['BusinessDesign/Assets/*.xcassets']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
